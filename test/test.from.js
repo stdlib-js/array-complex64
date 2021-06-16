@@ -312,8 +312,8 @@ tape( 'the method returns a complex number array (iterable)', function test( t )
 	var v;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	iter1 = {
@@ -468,8 +468,8 @@ tape( 'the method supports providing a "map" function which is invoked for each 
 	var v;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	iter1 = {
@@ -584,8 +584,8 @@ tape( 'the method supports providing a `this` context for a provided map functio
 	var arr;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	iter = {
@@ -701,7 +701,7 @@ tape( 'the method throws an error if provided a non-iterable object (non-ES2015+
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport
 	});
 
 	values = [
@@ -734,8 +734,8 @@ tape( 'the method throws an error if provided a non-iterable object (ES2015+)', 
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [
@@ -788,8 +788,8 @@ tape( 'the method throws an error if provided an iterable object which does not 
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [
@@ -844,8 +844,8 @@ tape( 'the method throws an error if provided an iterable object which does not 
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [
@@ -967,8 +967,8 @@ tape( 'the method throws an error if provided a "map" function which does not re
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [
@@ -1036,8 +1036,8 @@ tape( 'the method throws an error if provided a "map" function which does not re
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [

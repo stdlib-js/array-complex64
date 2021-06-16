@@ -134,8 +134,8 @@ tape( 'the constructor returns a 64-bit complex number array (iterable)', functi
 	var arr;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	arr = new Complex64Array( createIterable() );
@@ -171,8 +171,8 @@ tape( 'the constructor returns a 64-bit complex number array (iterable, no new)'
 	var arr;
 
 	ctor = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	arr = ctor( createIterable() );
@@ -413,8 +413,8 @@ tape( 'the constructor returns an instance having a `length` property for return
 	var v;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	iter1 = {
@@ -537,7 +537,7 @@ tape( 'the constructor throws an error if provided a non-iterable object (non-ES
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport
 	});
 
 	values = [
@@ -570,8 +570,8 @@ tape( 'the constructor throws an error if provided a non-iterable object (ES2015
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [
@@ -624,8 +624,8 @@ tape( 'the constructor throws an error if provided an iterable object which does
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [
@@ -680,8 +680,8 @@ tape( 'the constructor throws an error if provided an iterable object which does
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/has-iterator-symbol-support': hasSupport,
-		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+		'@stdlib/assert-has-iterator-symbol-support': hasSupport,
+		'@stdlib/symbol-iterator': '__SYMBOL_ITERATOR__'
 	});
 
 	values = [

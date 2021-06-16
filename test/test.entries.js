@@ -204,7 +204,7 @@ tape( 'if an environment supports `Symbol.iterator`, the method returns an itera
 	var i;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/symbol/iterator': '__ITERATOR_SYMBOL__'
+		'@stdlib/symbol-iterator': '__ITERATOR_SYMBOL__'
 	});
 
 	buf = [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ];
@@ -236,7 +236,7 @@ tape( 'if an environment does not support `Symbol.iterator`, the method does not
 	var it;
 
 	Complex64Array = proxyquire( './../lib/main.js', {
-		'@stdlib/symbol/iterator': false
+		'@stdlib/symbol-iterator': false
 	});
 
 	buf = [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ];
