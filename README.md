@@ -903,6 +903,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/array/complex128`][@stdlib/array/complex128]: complex128Array.
+-   [`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]: create a complex number.
+-   [`@stdlib/complex/float32`][@stdlib/complex/float32]: 64-bit complex number.
+
 </section>
 
 <!-- /.related -->
@@ -969,6 +977,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 [@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
+
+<!-- <related-links> -->
+
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
+
+[@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx
+
+[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
+
+<!-- </related-links> -->
 
 </section>
 
