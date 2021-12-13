@@ -279,8 +279,8 @@ The iterator returned by an iterable must return either a complex number or an a
 ```javascript
 var ITERATOR_SYMBOL = require( '@stdlib/symbol-iterator' );
 var Float32Array = require( '@stdlib/array-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var iter;
 var arr;
@@ -330,10 +330,10 @@ if ( ITERATOR_SYMBOL === null ) {
     z = arr.get( 0 );
     // returns <Complex64>
 
-    re = real( z );
+    re = realf( z );
     // returns 1.0
 
-    im = imag( z );
+    im = imagf( z );
     // returns -1.0
 }
 ```
@@ -342,11 +342,11 @@ To invoke a function for each `src` value, provide a callback function. If `src`
 
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function map( z ) {
-    return new Complex64( real(z)*2.0, imag(z)*2.0 );
+    return new Complex64( realf(z)*2.0, imagf(z)*2.0 );
 }
 
 // Create a source array:
@@ -362,10 +362,10 @@ var len = arr.length;
 var z = arr.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 2.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns -2.0
 ```
 
@@ -374,8 +374,8 @@ or an array-like `object` containing real and imaginary components
 ```javascript
 var Float32Array = require( '@stdlib/array-float32' );
 var Complex64 = require( '@stdlib/complex-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 // Return a callback which reuses allocated memory...
 function mapFcn() {
@@ -383,8 +383,8 @@ function mapFcn() {
     return map;
 
     function map( z ) {
-        buf[ 0 ] = real( z ) * 2.0;
-        buf[ 1 ] = imag( z ) * 2.0;
+        buf[ 0 ] = realf( z ) * 2.0;
+        buf[ 1 ] = imagf( z ) * 2.0;
         return buf;
     }
 }
@@ -402,19 +402,19 @@ var len = arr.length;
 var z = arr.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 2.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns -2.0
 
 z = arr.get( 1 );
 // returns <Complex64>
 
-re = real( z );
+re = realf( z );
 // returns 4.0
 
-im = imag( z );
+im = imagf( z );
 // returns -4.0
 ```
 
@@ -423,8 +423,8 @@ If `src` is an array-like `object` containing interleaved real and imaginary com
 ```javascript
 var Float32Array = require( '@stdlib/array-float32' );
 var Complex64 = require( '@stdlib/complex-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function map( v ) {
     return v * 2.0;
@@ -443,10 +443,10 @@ var len = arr.length;
 var z = arr.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 2.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns -2.0
 ```
 
@@ -459,12 +459,12 @@ To set the callback execution context, provide a `thisArg`.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function map( z ) {
     this.count += 1;
-    return new Complex64( real(z)*2.0, imag(z)*2.0 );
+    return new Complex64( realf(z)*2.0, imagf(z)*2.0 );
 }
 
 // Create a source array:
@@ -622,8 +622,8 @@ Returns an iterator for iterating over array key-value pairs.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32' );
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = [
     new Complex64( 1.0, -1.0 ),
@@ -639,28 +639,28 @@ var it = arr.entries();
 var v = it.next().value;
 // returns [ 0, <Complex64> ]
 
-var re = real( v[ 1 ] );
+var re = realf( v[ 1 ] );
 // returns 1.0
 
-var im = imag( v[ 1 ] );
+var im = imagf( v[ 1 ] );
 // returns -1.0
 
 v = it.next().value;
 // returns [ 1, <Complex64> ]
 
-re = real( v[ 1 ] );
+re = realf( v[ 1 ] );
 // returns 2.0
 
-im = imag( v[ 1 ] );
+im = imagf( v[ 1 ] );
 // returns -2.0
 
 v = it.next().value;
 // returns [ 2, <Complex64> ]
 
-re = real( v[ 1 ] );
+re = realf( v[ 1 ] );
 // returns 3.0
 
-im = imag( v[ 1 ] );
+im = imagf( v[ 1 ] );
 // returns -3.0
 
 var bool = it.next().done;
@@ -674,8 +674,8 @@ var bool = it.next().done;
 Returns an array element located at position (index) `i`.
 
 ```javascript
-var real = require( '@stdlib/complex-real' );
-var imag = require( '@stdlib/complex-imag' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -686,10 +686,10 @@ arr.set( [ 1.0, -1.0 ], 0 );
 var z = arr.get( 0 );
 // returns <Complex64>
 
-var re = real( z );
+var re = realf( z );
 // returns 1.0
 
-var im = imag( z );
+var im = imagf( z );
 // returns -1.0
 ```
 
@@ -987,8 +987,6 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 [@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx
-
-[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
 
 <!-- </related-links> -->
 
