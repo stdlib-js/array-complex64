@@ -37,6 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-arraylike2object": "^0.0.x",
     "@stdlib/array-float32": "^0.0.x",
     "@stdlib/assert-has-iterator-symbol-support": "^0.0.x",
     "@stdlib/assert-is-array": "^0.0.x",
@@ -52,17 +53,23 @@
     "@stdlib/complex-realf": "^0.0.x",
     "@stdlib/math-base-assert-is-even": "^0.0.x",
     "@stdlib/math-base-assert-is-integer": "^0.0.x",
+    "@stdlib/strided-base-reinterpret-complex128": "^0.0.x",
+    "@stdlib/strided-base-reinterpret-complex64": "^0.0.x",
     "@stdlib/symbol-iterator": "^0.0.x",
     "@stdlib/types": "^0.0.x",
-    "@stdlib/utils-define-property": "^0.0.x"
+    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.0.x",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/array-buffer": "^0.0.x",
+    "@stdlib/array-complex128": "^0.0.x",
     "@stdlib/assert-has-own-property": "^0.0.x",
     "@stdlib/assert-is-complex64": "^0.0.x",
     "@stdlib/assert-is-negative-zero": "^0.0.x",
     "@stdlib/assert-is-positive-zero": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
+    "@stdlib/complex-imag": "^0.0.x",
+    "@stdlib/complex-real": "^0.0.x",
     "@stdlib/math-base-special-pow": "^0.0.x",
     "@stdlib/random-base-randu": "^0.0.x",
     "proxyquire": "^2.0.0",
