@@ -55,7 +55,7 @@
     "@stdlib/math-base-assert-is-integer": "^0.0.x",
     "@stdlib/strided-base-reinterpret-complex128": "^0.0.x",
     "@stdlib/strided-base-reinterpret-complex64": "^0.0.x",
-    "@stdlib/string-format": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x",
     "@stdlib/symbol-iterator": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.0.x",
