@@ -18,7 +18,7 @@
 
 // TypeScript Version: 2.0
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
 import { ArrayLike, RealOrComplexTypedArray, Complex64Array as Complex64ArrayInterface } from '@stdlib/types/array';
