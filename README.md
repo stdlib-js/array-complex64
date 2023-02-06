@@ -971,11 +971,12 @@ A few notes:
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32' );
 var Float32Array = require( '@stdlib/array-float32' );
+var logEach = require( '@stdlib/console-log-each' );
 var Complex64Array = require( '@stdlib/array-complex64' );
 
 // Create a complex array by specifying a length:
 var out = new Complex64Array( 3 );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an array of complex numbers:
 var arr = [
@@ -984,22 +985,22 @@ var arr = [
     new Complex64( 0.5, 0.5 )
 ];
 out = new Complex64Array( arr );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an interleaved typed array:
 arr = new Float32Array( [ 1.0, -1.0, -3.14, 3.14, 0.5, 0.5 ] );
 out = new Complex64Array( arr );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an array buffer:
 arr = new Float32Array( [ 1.0, -1.0, -3.14, 3.14, 0.5, 0.5 ] );
 out = new Complex64Array( arr.buffer );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an array buffer view:
 arr = new Float32Array( [ 1.0, -1.0, -3.14, 3.14, 0.5, 0.5 ] );
 out = new Complex64Array( arr.buffer, 8, 2 );
-console.log( out );
+logEach( '%s', out );
 ```
 
 </section>
@@ -1022,9 +1023,9 @@ console.log( out );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
--   <span class="package-name">[`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]</span><span class="delimiter">: </span><span class="description">create a complex number.</span>
--   <span class="package-name">[`@stdlib/complex/float32`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
+-   <span class="package-name">[`@stdlib/array-complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
+-   <span class="package-name">[`@stdlib/complex-cmplx`][@stdlib/complex/cmplx]</span><span class="delimiter">: </span><span class="description">create a complex number.</span>
+-   <span class="package-name">[`@stdlib/complex-float32`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
 
 </section>
 
