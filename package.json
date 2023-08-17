@@ -72,7 +72,7 @@
     "@stdlib/bench": "^0.0.12",
     "@stdlib/complex-imag": "^0.0.7",
     "@stdlib/complex-real": "^0.0.7",
-    "@stdlib/console-log-each": "^0.0.1",
+    "@stdlib/console-log-each": "^0.0.2",
     "@stdlib/math-base-special-pow": "^0.0.7",
     "@stdlib/random-base-randu": "^0.0.8",
     "proxyquire": "^2.0.0",
