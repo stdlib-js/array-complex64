@@ -18,6 +18,17 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # Complex64Array
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
@@ -34,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-complex64
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-Complex64Array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var Complex64Array = require( 'path/to/vendor/umd/array-complex64/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.Complex64Array;
-})();
-</script>
+var Complex64Array = require( '@stdlib/array-complex64' );
 ```
 
 <a name="constructor"></a>
@@ -780,7 +783,7 @@ var bool = it.next().done;
 
 #### Complex64Array.prototype.get( i )
 
-Returns an array element located at position (index) `i`.
+Returns an array element located at a nonnegative integer position (index) `i`.
 
 ```javascript
 var realf = require( '@stdlib/complex-realf' );
@@ -808,6 +811,56 @@ If provided an out-of-bounds index, the method returns `undefined`.
 var arr = new Complex64Array( 10 );
 
 var z = arr.get( 100 );
+// returns undefined
+```
+
+<a name="method-at"></a>
+
+#### Complex64Array.prototype.at( i )
+
+Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
+
+```javascript
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
+
+var arr = new Complex64Array( 10 );
+
+// Set the first, second, and last elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, -2.0 ], 1 );
+arr.set( [ 9.0, -9.0 ], 9 );
+
+// Get the first element:
+var z = arr.at( 0 );
+// returns <Complex64>
+
+var re = realf( z );
+// returns 1.0
+
+var im = imagf( z );
+// returns -1.0
+
+// Get the last element:
+z = arr.at( -1 );
+// returns <Complex64>
+
+re = realf( z );
+// returns 9.0
+
+im = imagf( z );
+// returns -9.0
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var arr = new Complex64Array( 10 );
+
+var z = arr.at( 100 );
+// returns undefined
+
+z = arr.at( -100 );
 // returns undefined
 ```
 
@@ -976,19 +1029,15 @@ A few notes:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Complex64 = require( '@stdlib/complex-float32' );
+var Float32Array = require( '@stdlib/array-float32' );
+var logEach = require( '@stdlib/console-log-each' );
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 // Create a complex array by specifying a length:
 var out = new Complex64Array( 3 );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an array of complex numbers:
 var arr = [
@@ -997,27 +1046,22 @@ var arr = [
     new Complex64( 0.5, 0.5 )
 ];
 out = new Complex64Array( arr );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an interleaved typed array:
 arr = new Float32Array( [ 1.0, -1.0, -3.14, 3.14, 0.5, 0.5 ] );
 out = new Complex64Array( arr );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an array buffer:
 arr = new Float32Array( [ 1.0, -1.0, -3.14, 3.14, 0.5, 0.5 ] );
 out = new Complex64Array( arr.buffer );
-console.log( out );
+logEach( '%s', out );
 
 // Create a complex array from an array buffer view:
 arr = new Float32Array( [ 1.0, -1.0, -3.14, 3.14, 0.5, 0.5 ] );
 out = new Complex64Array( arr.buffer, 8, 2 );
-console.log( out );
-
-})();
-</script>
-</body>
-</html>
+logEach( '%s', out );
 ```
 
 </section>
@@ -1040,9 +1084,9 @@ console.log( out );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
--   <span class="package-name">[`@stdlib/complex/cmplx`][@stdlib/complex/cmplx]</span><span class="delimiter">: </span><span class="description">create a complex number.</span>
--   <span class="package-name">[`@stdlib/complex/float32`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
+-   <span class="package-name">[`@stdlib/array-complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
+-   <span class="package-name">[`@stdlib/complex-cmplx`][@stdlib/complex/cmplx]</span><span class="delimiter">: </span><span class="description">create a complex number.</span>
+-   <span class="package-name">[`@stdlib/complex-float32`][@stdlib/complex/float32]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
 
 </section>
 
@@ -1074,7 +1118,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -1101,7 +1145,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -1117,17 +1161,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-complex64/main/LICENSE
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/umd
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/umd
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32/tree/umd
+[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
 
 <!-- <related-links> -->
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/umd
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
-[@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx/tree/umd
+[@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx
 
 <!-- </related-links> -->
 
