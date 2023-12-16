@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var Float32Array = require( '@stdlib/array-float32' );
 var ITERATOR_SYMBOL = require( '@stdlib/symbol-iterator' );
 var pkg = require( './../package.json' ).name;

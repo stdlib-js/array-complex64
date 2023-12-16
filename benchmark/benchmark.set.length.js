@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var pow = require( '@stdlib/math-base-special-pow' );
 var randu = require( '@stdlib/random-base-randu' );
 var Complex64 = require( '@stdlib/complex-float32' );

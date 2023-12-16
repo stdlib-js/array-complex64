@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,35 +22,64 @@
 
 var bench = require( '@stdlib/bench-harness' );
 var Complex64 = require( '@stdlib/complex-float32' );
+var isComplex64 = require( '@stdlib/assert-is-complex64' );
 var pkg = require( './../package.json' ).name;
 var Complex64Array = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+':copyWithin', function benchmark( b ) {
+bench( pkg+'::nonnegative_indices:at', function benchmark( b ) {
 	var arr;
-	var buf;
+	var N;
+	var z;
 	var i;
 
 	arr = [];
-	for ( i = 0; i < 5; i++ ) {
+	for ( i = 0; i < 10; i++ ) {
 		arr.push( new Complex64( i, i ) );
 	}
 	arr = new Complex64Array( arr );
-	buf = arr.buffer;
+	N = arr.length;
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		buf[ 0 ] = i;
-		arr = arr.copyWithin( 1, 0 );
-		if ( buf[ 0 ] !== i ) {
-			b.fail( 'unexpected result' );
+		z = arr.at( i%N );
+		if ( typeof z !== 'object' ) {
+			b.fail( 'should return an object' );
 		}
 	}
 	b.toc();
-	if ( buf[ 0 ] !== buf[ 0 ] ) {
-		b.fail( 'should not be NaN' );
+	if ( !isComplex64( z ) ) {
+		b.fail( 'should return a complex number' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( pkg+'::negative_indices:at', function benchmark( b ) {
+	var arr;
+	var N;
+	var z;
+	var i;
+
+	arr = [];
+	for ( i = 0; i < 10; i++ ) {
+		arr.push( new Complex64( i, i ) );
+	}
+	arr = new Complex64Array( arr );
+	N = arr.length;
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		z = arr.at( -(i%N)-1 );
+		if ( typeof z !== 'object' ) {
+			b.fail( 'should return an object' );
+		}
+	}
+	b.toc();
+	if ( !isComplex64( z ) ) {
+		b.fail( 'should return a complex number' );
 	}
 	b.pass( 'benchmark finished' );
 	b.end();
