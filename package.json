@@ -66,6 +66,7 @@
     "@stdlib/array-buffer": "^0.1.0",
     "@stdlib/array-complex128": "^0.1.0",
     "@stdlib/assert-has-own-property": "^0.1.1",
+    "@stdlib/assert-is-boolean": "^0.1.1",
     "@stdlib/assert-is-complex64": "^0.1.1",
     "@stdlib/assert-is-negative-zero": "^0.1.1",
     "@stdlib/assert-is-positive-zero": "^0.1.1",
