@@ -855,7 +855,7 @@ var z = arr.every( predicate );
 // returns true
 ```
 
-The `predicate` function is provided four arguments:
+The `predicate` function is provided three arguments:
 
 -   **value**: current array element.
 -   **index**: current array element index.
