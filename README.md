@@ -45,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-complex64
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64Array = require( '@stdlib/array-complex64' );
 ```
 
 <a name="constructor"></a>
@@ -98,7 +114,7 @@ var len = arr2.length;
 Creates a 64-bit complex number array from a [typed array][@stdlib/array/typed] containing interleaved real and imaginary components.
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
 
 var buf = new Float32Array( [ 1.0, -1.0, 2.0, -2.0 ] ); // [ re, im, re, im ]
 // returns <Float32Array>[ 1.0, -1.0, 2.0, -2.0 ]
@@ -115,7 +131,7 @@ var len = arr.length;
 Creates a 64-bit complex number array from an array-like object or iterable.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
 
 // From an array of interleaved real and imaginary components:
 var arr1 = new Complex64Array( [ 1.0, -1.0, 2.0, -2.0 ] );
@@ -137,7 +153,7 @@ len = arr2.length;
 Returns a 64-bit complex number array view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var buf = new ArrayBuffer( 240 );
 
 var arr1 = new Complex64Array( buf );
@@ -220,7 +236,7 @@ var nbytes = arr.byteLength;
 Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 
 var arr = new Complex64Array( 10 );
 // returns <Complex64Array>
@@ -275,7 +291,7 @@ var len = arr.length;
 Creates a new 64-bit complex number array from an array-like object or an iterable.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
 
 // Create an array from interleaved real and imaginary components:
 var arr = Complex64Array.from( [ 1.0, -1.0 ] );
@@ -295,10 +311,10 @@ len = arr.length;
 The iterator returned by an iterable must return either a complex number or an array-like object containing a real and imaginary component.
 
 ```javascript
-import ITERATOR_SYMBOL from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-iterator@deno/mod.js';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var ITERATOR_SYMBOL = require( '@stdlib/symbol-iterator' );
+var Float32Array = require( '@stdlib/array-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var iter;
 var arr;
@@ -359,9 +375,9 @@ if ( ITERATOR_SYMBOL === null ) {
 To invoke a function for each `src` value, provide a callback function. If `src` is an iterable or an array-like object containing complex numbers, the callback must return either a complex number
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function map( z ) {
     return new Complex64( realf(z)*2.0, imagf(z)*2.0 );
@@ -390,10 +406,10 @@ var im = imagf( z );
 or an array-like object containing real and imaginary components
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 // Return a callback which reuses allocated memory...
 function mapFcn() {
@@ -439,10 +455,10 @@ im = imagf( z );
 If `src` is an array-like object containing interleaved real and imaginary components, the callback is invoked for each component and should return the transformed component value.
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function map( v ) {
     return v * 2.0;
@@ -476,9 +492,9 @@ A callback function is provided two arguments:
 To set the callback execution context, provide a `thisArg`.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function map( z ) {
     this.count += 1;
@@ -511,7 +527,7 @@ var n = ctx.count;
 Creates a new 64-bit complex number array from a variable number of arguments.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
 
 var arr = Complex64Array.of( 1.0, -1.0, 2.0, -2.0 );
 // returns <Complex64Array>
@@ -536,8 +552,8 @@ len = arr.length;
 Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
 
 ```javascript
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -586,9 +602,9 @@ z = arr.at( -100 );
 Copies a sequence of elements within the array starting at `start` and ending at `end` (non-inclusive) to the position starting at `target`.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 4 );
 
@@ -645,9 +661,9 @@ im = imagf( z );
 By default, `end` equals the number of array elements (i.e., one more than the last array index). To limit the sequence length, provide an `end` argument.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 4 );
 
@@ -704,9 +720,9 @@ im = imagf( z );
 When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last array element. The following example achieves the same behavior as the previous example:
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 4 );
 
@@ -767,9 +783,9 @@ im = imagf( z );
 Returns an iterator for iterating over array key-value pairs.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = [
     new Complex64( 1.0, -1.0 ),
@@ -820,8 +836,8 @@ var bool = it.next().done;
 Returns a boolean indicating whether all elements pass a test.
 
 ```javascript
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 function predicate( v ) {
     return ( realf( v ) === imagf( v ) );
@@ -839,7 +855,7 @@ var z = arr.every( predicate );
 // returns true
 ```
 
-The `predicate` function is provided four arguments:
+The `predicate` function is provided three arguments:
 
 -   **value**: current array element.
 -   **index**: current array element index.
@@ -878,8 +894,8 @@ var count = context.count;
 Returns an array element located at a nonnegative integer position (index) `i`.
 
 ```javascript
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -913,9 +929,9 @@ var z = arr.get( 100 );
 Sets one or more array elements.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -946,9 +962,9 @@ im = imagf( z );
 By default, the method sets array elements starting at position (index) `i = 0`. To set elements starting elsewhere in the array, provide an index argument `i`.
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -979,9 +995,9 @@ im = imagf( z );
 In addition to providing a complex number, to set one or more array elements, provide an array-like object containing either complex numbers
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -1009,9 +1025,9 @@ var im = imagf( z );
 or interleaved real and imaginary components
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-realf@deno/mod.js';
-import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-imagf@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
 
 var arr = new Complex64Array( 10 );
 
@@ -1037,6 +1053,67 @@ A few notes:
 -   If `i` is out-of-bounds, the method throws an error.
 -   If a target array cannot accommodate all values (i.e., the length of source array plus `i` exceeds the target array length), the method throws an error.
 -   If provided a [typed array][@stdlib/array/typed] which shares an [`ArrayBuffer`][@stdlib/array/buffer] with the target array, the method will intelligently copy the source range to the destination range.
+
+<a name="method-some"></a>
+
+#### Complex64Array.prototype.some( predicate\[, thisArg] )
+
+Returns a boolean indicating whether at least one element passes a test.
+
+```javascript
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
+
+function predicate( v ) {
+    return ( realf( v ) === imagf( v ) );
+}
+
+var arr = new Complex64Array( 3 );
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+// Check whether at least one element passes a test:
+var z = arr.some( predicate );
+// returns true
+```
+
+The `predicate` function is provided three arguments:
+
+-   **value**: current array element.
+-   **index**: current array element index.
+-   **arr**: the array on which this method was called.
+
+To set the function execution context, provide a `thisArg`.
+
+```javascript
+var realf = require( '@stdlib/complex-realf' );
+var imagf = require( '@stdlib/complex-imagf' );
+
+function predicate( v, i ) {
+    this.count += 1;
+    return ( imagf( v ) === realf( v ) );
+}
+
+var arr = new Complex64Array( 3 );
+
+var context = {
+    'count': 0
+};
+
+// Set the first three elements:
+arr.set( [ 1.0, -1.0 ], 0 );
+arr.set( [ 2.0, 2.0 ], 1 );
+arr.set( [ 3.0, -3.0 ], 2 );
+
+var z = arr.some( predicate, context );
+// returns true
+
+var count = context.count;
+// returns 2
+```
 
 </section>
 
@@ -1072,10 +1149,10 @@ A few notes:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@deno/mod.js';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+var Complex64 = require( '@stdlib/complex-float32' );
+var Float32Array = require( '@stdlib/array-float32' );
+var logEach = require( '@stdlib/console-log-each' );
+var Complex64Array = require( '@stdlib/array-complex64' );
 
 // Create a complex array by specifying a length:
 var out = new Complex64Array( 3 );
@@ -1143,7 +1220,7 @@ logEach( '%s', out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -1203,17 +1280,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-complex64/main/LICENSE
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed/tree/deno
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/deno
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32/tree/deno
+[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
 
 <!-- <related-links> -->
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/deno
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
-[@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx/tree/deno
+[@stdlib/complex/cmplx]: https://github.com/stdlib-js/complex-cmplx
 
 <!-- </related-links> -->
 
