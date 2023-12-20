@@ -931,7 +931,7 @@ Returns the first index at which a given element can be found.
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32' );
 
-var arr = new Complex64Array( 10 );
+var arr = new Complex64Array( 5 );
 
 arr.set( [ 1.0, -1.0 ], 0 );
 arr.set( [ 2.0, -2.0 ], 1 );
@@ -944,6 +944,9 @@ var idx = arr.indexOf( new Complex64( 3.0, -3.0 ) );
 
 idx = arr.indexOf( new Complex64( 2.0, -2.0 ), 2 );
 // returns 4
+
+idx = arr.indexOf( new Complex64( 4.0, -4.0 ), -3 );
+// returns 3
 ```
 
 If `searchElement` is not present in the array, the method returns `-1`.
@@ -972,7 +975,7 @@ Returns the last index at which a given element can be found.
 ```javascript
 var Complex64 = require( '@stdlib/complex-float32' );
 
-var arr = new Complex64Array( 10 );
+var arr = new Complex64Array( 5 );
 
 arr.set( [ 1.0, -1.0 ], 0 );
 arr.set( [ 2.0, -2.0 ], 1 );
@@ -985,6 +988,9 @@ var idx = arr.lastIndexOf( new Complex64( 3.0, -3.0 ) );
 
 idx = arr.lastIndexOf( new Complex64( 2.0, -2.0 ), 2 );
 // returns 1
+
+idx = arr.lastIndexOf( new Complex64( 4.0, -4.0 ), -1 );
+// returns 3
 ```
 
 If `searchElement` is not present in the array, the method returns `-1`.
