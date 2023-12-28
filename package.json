@@ -78,6 +78,7 @@
     "@stdlib/console-log-each": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/random-base-randu": "^0.1.0",
+    "@stdlib/utils-identity-function": "^0.1.1",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
