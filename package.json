@@ -55,6 +55,7 @@
     "@stdlib/complex-realf": "^0.1.1",
     "@stdlib/math-base-assert-is-even": "^0.1.0",
     "@stdlib/math-base-assert-is-integer": "^0.1.1",
+    "@stdlib/math-base-special-floor": "^0.1.1",
     "@stdlib/strided-base-reinterpret-complex128": "^0.1.1",
     "@stdlib/strided-base-reinterpret-complex64": "^0.1.1",
     "@stdlib/string-format": "^0.1.1",
