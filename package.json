@@ -38,8 +38,8 @@
   },
   "dependencies": {
     "@stdlib/array-base-accessor-getter": "^0.1.0",
-    "@stdlib/array-base-assert-is-complex128array": "github:stdlib-js/array-base-assert-is-complex128array#main",
-    "@stdlib/array-base-assert-is-complex64array": "github:stdlib-js/array-base-assert-is-complex64array#main",
+    "@stdlib/array-base-assert-is-complex128array": "^0.1.0",
+    "@stdlib/array-base-assert-is-complex64array": "^0.1.0",
     "@stdlib/array-base-getter": "^0.1.0",
     "@stdlib/array-float32": "^0.1.1",
     "@stdlib/assert-has-iterator-symbol-support": "^0.1.1",
