@@ -76,6 +76,7 @@
     "@stdlib/assert-is-complex64": "^0.2.1",
     "@stdlib/assert-is-complex64array": "^0.2.1",
     "@stdlib/assert-is-integer": "^0.2.1",
+    "@stdlib/assert-is-iterator-like": "^0.2.1",
     "@stdlib/assert-is-negative-zero": "^0.2.1",
     "@stdlib/assert-is-positive-zero": "^0.2.1",
     "@stdlib/complex-imag": "^0.2.1",
