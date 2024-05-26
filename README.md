@@ -2725,7 +2725,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32
+[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor
 
 <!-- <related-links> -->
 
