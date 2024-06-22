@@ -53,7 +53,7 @@
     "@stdlib/assert-is-object": "^0.2.1",
     "@stdlib/assert-is-string": "^0.2.1",
     "@stdlib/assert-is-string-array": "^0.2.1",
-    "@stdlib/complex-float32-ctor": "github:stdlib-js/complex-float32-ctor#main",
+    "@stdlib/complex-float32-ctor": "^0.0.1",
     "@stdlib/complex-imagf": "^0.2.1",
     "@stdlib/complex-realf": "^0.2.1",
     "@stdlib/math-base-assert-is-even": "^0.2.2",
