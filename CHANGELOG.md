@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-07)
+## Unreleased (2024-07-15)
 
 <section class="features">
 
@@ -38,6 +38,7 @@
 
 <details>
 
+-   [`523b380`](https://github.com/stdlib-js/stdlib/commit/523b3805be86c1fd99d8e65a8f89cdcbe7ec1fa0) - **refactor:** update error message interpolation _(by Athan Reines)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`6b0e763`](https://github.com/stdlib-js/stdlib/commit/6b0e763f6763fcad684f7cc82bb3300837dad71b) - **docs:** update example and add return description [(#2489)](https://github.com/stdlib-js/stdlib/pull/2489) _(by Jaysukh Makvana)_
 -   [`61c5609`](https://github.com/stdlib-js/stdlib/commit/61c5609ba30f3b07cd97089746a5dca25a614d94) - **docs:** fix examples in REPL documentation for complex number arrays [(#2431)](https://github.com/stdlib-js/stdlib/pull/2431) _(by Jaysukh Makvana)_
