@@ -81,7 +81,7 @@
     "@stdlib/assert-is-negative-zero": "^0.2.1",
     "@stdlib/assert-is-positive-zero": "^0.2.1",
     "@stdlib/complex-float64-imag": "github:stdlib-js/complex-float64-imag#main",
-    "@stdlib/complex-real": "^0.2.1",
+    "@stdlib/complex-float64-real": "github:stdlib-js/complex-float64-real#main",
     "@stdlib/console-log-each": "^0.2.1",
     "@stdlib/math-base-ops-caddf": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.2.1",
