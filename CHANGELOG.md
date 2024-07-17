@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-15)
+## Unreleased (2024-07-17)
 
 <section class="features">
 
@@ -38,6 +38,9 @@
 
 <details>
 
+-   [`8d4c46b`](https://github.com/stdlib-js/stdlib/commit/8d4c46b10ca912401e0ff0caa37a17cd3c443c2f) - **refactor:** update paths _(by Athan Reines)_
+-   [`ed9c0a5`](https://github.com/stdlib-js/stdlib/commit/ed9c0a5e55ff09af3dd6af8c38615480e2c1828e) - **refactor:** update paths _(by Athan Reines)_
+-   [`18b3c79`](https://github.com/stdlib-js/stdlib/commit/18b3c79c5035c7082618b7379cd6576e64393a96) - **refactor:** update paths _(by Athan Reines)_
 -   [`523b380`](https://github.com/stdlib-js/stdlib/commit/523b3805be86c1fd99d8e65a8f89cdcbe7ec1fa0) - **refactor:** update error message interpolation _(by Athan Reines)_
 -   [`659f752`](https://github.com/stdlib-js/stdlib/commit/659f752db18317bf5fc237fdbcad0d74b61e1ed9) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`6b0e763`](https://github.com/stdlib-js/stdlib/commit/6b0e763f6763fcad684f7cc82bb3300837dad71b) - **docs:** update example and add return description [(#2489)](https://github.com/stdlib-js/stdlib/pull/2489) _(by Jaysukh Makvana)_
