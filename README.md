@@ -1698,7 +1698,7 @@ Applies a provided callback function to each element of the array, in order, pas
 ```javascript
 var realf = require( '@stdlib/complex-float32-real' );
 var imagf = require( '@stdlib/complex-float32-imag' );
-var caddf = require( '@stdlib/math-base-ops-caddf' );
+var caddf = require( '@stdlib/complex-float32-base-add' );
 
 var arr = new Complex64Array( 3 );
 
@@ -1752,7 +1752,7 @@ Applies a provided callback function to each element of the array, in reverse or
 ```javascript
 var realf = require( '@stdlib/complex-float32-real' );
 var imagf = require( '@stdlib/complex-float32-imag' );
-var caddf = require( '@stdlib/math-base-ops-caddf' );
+var caddf = require( '@stdlib/complex-float32-base-add' );
 
 var arr = new Complex64Array( 3 );
 
