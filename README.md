@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@v0.3.0-deno/mod.js';
 ```
 
 <a name="constructor"></a>
@@ -2570,7 +2570,7 @@ var im = imagf( z );
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@v0.3.0-deno/mod.js';
 
 // Create a complex array by specifying a length:
 var out = new Complex64Array( 3 );
