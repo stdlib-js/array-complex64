@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-07-18)
+## 0.3.0 (2024-07-29)
 
 <section class="features">
 
@@ -15,8 +15,8 @@
 -   [`e92cdd8`](https://github.com/stdlib-js/stdlib/commit/e92cdd897563a28ff07df5ceda2603567fe1149f) - add `toLocaleString` method to `array/complex64` [(#2208)](https://github.com/stdlib-js/stdlib/pull/2208)
 -   [`d9359b6`](https://github.com/stdlib-js/stdlib/commit/d9359b67e683becb4f0a497a05da1a148381f2b0) - add `keys` method to `array/complex64` [(#2160)](https://github.com/stdlib-js/stdlib/pull/2160)
 -   [`832504a`](https://github.com/stdlib-js/stdlib/commit/832504a5f0289f40367fd8041ab573c1e8ed3527) - add `values` method to `array/complex64` [(#1706)](https://github.com/stdlib-js/stdlib/pull/1706)
--   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - add `reduceRight` method to `array/complex128` [(##1406)](#1406)
--   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - add `reduceRight` method to `array/complex64` [(##1395)](#1395)
+-   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - add `reduceRight` method to `array/complex128` [(#1406)](https://github.com/stdlib-js/stdlib/pull/1406)
+-   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - add `reduceRight` method to `array/complex64` [(#1395)](https://github.com/stdlib-js/stdlib/pull/1395)
 
 </section>
 
@@ -49,7 +49,7 @@
 -   [`61c5609`](https://github.com/stdlib-js/stdlib/commit/61c5609ba30f3b07cd97089746a5dca25a614d94) - **docs:** fix examples in REPL documentation for complex number arrays [(#2431)](https://github.com/stdlib-js/stdlib/pull/2431) _(by Jaysukh Makvana)_
 -   [`cc06b5c`](https://github.com/stdlib-js/stdlib/commit/cc06b5c8c67a1c8d1022920273535b29e5abf550) - **fix:** add missing generic parameter _(by Athan Reines)_
 -   [`9dd3673`](https://github.com/stdlib-js/stdlib/commit/9dd3673c96b4b77d9cbc377bf2c551636b8c4dff) - **docs:** add `repl.txt` to `array/complex64` [(#2275)](https://github.com/stdlib-js/stdlib/pull/2275) _(by Jaysukh Makvana, Athan Reines)_
--   [`3a3b1e0`](https://github.com/stdlib-js/stdlib/commit/3a3b1e08f73a54c5ee46d73045805aee0bb1196d) - **docs:** update package URLs [(##2269)](#2269) _(by stdlib-bot)_
+-   [`3a3b1e0`](https://github.com/stdlib-js/stdlib/commit/3a3b1e08f73a54c5ee46d73045805aee0bb1196d) - **docs:** update package URLs [(#2269)](https://github.com/stdlib-js/stdlib/pull/2269) _(by stdlib-bot)_
 -   [`8089b88`](https://github.com/stdlib-js/stdlib/commit/8089b886a4d7d89f15abb068b1021d93f9c4f64e) - **docs:** update paths _(by Athan Reines)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
 -   [`ccbf26a`](https://github.com/stdlib-js/stdlib/commit/ccbf26a09b13fc483b7f1b55718b32f5af61b800) - **test:** fix descriptions _(by Athan Reines)_
@@ -58,12 +58,12 @@
 -   [`6b8d896`](https://github.com/stdlib-js/stdlib/commit/6b8d896c26a69ddd2fd57ae80b2411ef3e3c8d8e) - **test:** fix typo _(by Athan Reines)_
 -   [`a0c28de`](https://github.com/stdlib-js/stdlib/commit/a0c28dea6a9afad5a4c1b55c552480247824a837) - **feat:** add `sort` method to `array/complex64` [(#2259)](https://github.com/stdlib-js/stdlib/pull/2259) _(by Jaysukh Makvana, Athan Reines)_
 -   [`e92cdd8`](https://github.com/stdlib-js/stdlib/commit/e92cdd897563a28ff07df5ceda2603567fe1149f) - **feat:** add `toLocaleString` method to `array/complex64` [(#2208)](https://github.com/stdlib-js/stdlib/pull/2208) _(by Jaysukh Makvana, Athan Reines)_
--   [`113ec19`](https://github.com/stdlib-js/stdlib/commit/113ec1946e4f10fbcce6cc59a57022afcdb582f5) - **docs:** update related packages sections [(##2207)](#2207 ) _(by stdlib-bot)_
+-   [`113ec19`](https://github.com/stdlib-js/stdlib/commit/113ec1946e4f10fbcce6cc59a57022afcdb582f5) - **docs:** update related packages sections [(#2207)](https://github.com/stdlib-js/stdlib/pull/2207 ) _(by stdlib-bot)_
 -   [`d9359b6`](https://github.com/stdlib-js/stdlib/commit/d9359b67e683becb4f0a497a05da1a148381f2b0) - **feat:** add `keys` method to `array/complex64` [(#2160)](https://github.com/stdlib-js/stdlib/pull/2160) _(by Jaysukh Makvana, Athan Reines)_
 -   [`832504a`](https://github.com/stdlib-js/stdlib/commit/832504a5f0289f40367fd8041ab573c1e8ed3527) - **feat:** add `values` method to `array/complex64` [(#1706)](https://github.com/stdlib-js/stdlib/pull/1706) _(by Jaysukh Makvana, Athan Reines)_
 -   [`902b38a`](https://github.com/stdlib-js/stdlib/commit/902b38ac100f6710d2ad5e28f31422e573cc6d29) - **docs:** update descriptions _(by Athan Reines)_
--   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - **feat:** add `reduceRight` method to `array/complex128` [(##1406)](#1406) _(by Jaysukh Makvana, stdlib-bot, Philipp Burckhardt)_
--   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - **feat:** add `reduceRight` method to `array/complex64` [(##1395)](#1395) _(by Jaysukh Makvana, Philipp Burckhardt)_
+-   [`4e84566`](https://github.com/stdlib-js/stdlib/commit/4e845661773892e654689ceb0c2dd3e1e2c3244c) - **feat:** add `reduceRight` method to `array/complex128` [(#1406)](https://github.com/stdlib-js/stdlib/pull/1406) _(by Jaysukh Makvana, stdlib-bot, Philipp Burckhardt)_
+-   [`ee1c957`](https://github.com/stdlib-js/stdlib/commit/ee1c957b483718a809a8ebb0dd1eaa336fc3d97d) - **feat:** add `reduceRight` method to `array/complex64` [(#1395)](https://github.com/stdlib-js/stdlib/pull/1395) _(by Jaysukh Makvana, Philipp Burckhardt)_
 
 </details>
 
@@ -99,6 +99,50 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ### Features
 
 -   [`f3def6d`](https://github.com/stdlib-js/stdlib/commit/f3def6de1cbd1829b3e8c57e52434eb16841ffe8) - add `reduce` method to `array/complex64` [(#1271)](https://github.com/stdlib-js/stdlib/pull/1271)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`f3def6d`](https://github.com/stdlib-js/stdlib/commit/f3def6de1cbd1829b3e8c57e52434eb16841ffe8) - **feat:** add `reduce` method to `array/complex64` [(#1271)](https://github.com/stdlib-js/stdlib/pull/1271) _(by Jaysukh Makvana, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Jaysukh Makvana
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-14)
+
+<section class="features">
+
+### Features
+
 -   [`237e57a`](https://github.com/stdlib-js/stdlib/commit/237e57aa66298a87355f7af76c0f6cc523aa1ed3) - add `toReversed` method to `array/complex64` [(#1260)](https://github.com/stdlib-js/stdlib/pull/1260)
 -   [`2455a39`](https://github.com/stdlib-js/stdlib/commit/2455a399ca0ab7b646774b2e6db6160f4443510b) - add `reverse` method to `array/complex64` [(#1259)](https://github.com/stdlib-js/stdlib/pull/1259)
 -   [`0de3922`](https://github.com/stdlib-js/stdlib/commit/0de3922a285c4fc47a4b705b7e677837034f9f4f) - add `slice` method to `array/complex64` [(#1257)](https://github.com/stdlib-js/stdlib/pull/1257)
@@ -120,7 +164,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`c0f06f8`](https://github.com/stdlib-js/stdlib/commit/c0f06f81d7226d73f1911e0b91dcac621589333e) - add `some` method to `array/complex64` [(#1190)](https://github.com/stdlib-js/stdlib/pull/1190)
 -   [`9272073`](https://github.com/stdlib-js/stdlib/commit/9272073a2ec744a05d070c7e07f6f2cf8033c568) - add `every` method to `array/complex64` [(#1184)](https://github.com/stdlib-js/stdlib/pull/1184)
 -   [`06f0f91`](https://github.com/stdlib-js/stdlib/commit/06f0f91a5ed2c328ab09fa2813d8df2b0864555a) - add support for the typed array `at` method in `array/complex64` [(#1182)](https://github.com/stdlib-js/stdlib/pull/1182)
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
 
 </section>
 
@@ -133,24 +176,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`f2aab8d`](https://github.com/stdlib-js/stdlib/commit/f2aab8d64e9a2e347a7e566fcda7301b30b38d91) - ensure correct use of generics
 -   [`848730f`](https://github.com/stdlib-js/stdlib/commit/848730f6af734fd9649ac942e72aa7a60f99ec5a) - add support for negative indices in method `indexOf` and `lastIndexOf` [(#1197)](https://github.com/stdlib-js/stdlib/pull/1197)
 -   [`8b2937f`](https://github.com/stdlib-js/stdlib/commit/8b2937f503749017107432a0981ebbc30c05aeb0) - address typo in error message
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 <section class="commits">
 
@@ -158,7 +187,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`f3def6d`](https://github.com/stdlib-js/stdlib/commit/f3def6de1cbd1829b3e8c57e52434eb16841ffe8) - **feat:** add `reduce` method to `array/complex64` [(#1271)](https://github.com/stdlib-js/stdlib/pull/1271) _(by Jaysukh Makvana, Athan Reines)_
 -   [`87d2120`](https://github.com/stdlib-js/stdlib/commit/87d21205bb2ed5fcf848836d7659942f34b5fb59) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`aa6cac7`](https://github.com/stdlib-js/stdlib/commit/aa6cac712cadf62c5cdc884333d47bbf1b81411f) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`237e57a`](https://github.com/stdlib-js/stdlib/commit/237e57aa66298a87355f7af76c0f6cc523aa1ed3) - **feat:** add `toReversed` method to `array/complex64` [(#1260)](https://github.com/stdlib-js/stdlib/pull/1260) _(by Jaysukh Makvana, Athan Reines)_
@@ -205,8 +233,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`b496b72`](https://github.com/stdlib-js/stdlib/commit/b496b72595355b5a794c940bd7f81ea5223b91bd) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
 -   [`df3c9b3`](https://github.com/stdlib-js/stdlib/commit/df3c9b368d8a3dd7dd38f8768deb53c2a780c055) - **build:** remove tslint directives _(by Philipp Burckhardt)_
 -   [`453dd85`](https://github.com/stdlib-js/stdlib/commit/453dd85b5dd186d2b4d458256fe84906e1503fe2) - **build:** remove tslint directives _(by Philipp Burckhardt)_
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - **feat:** update minimum TypeScript version _(by Philipp Burckhardt)_
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - **fix:** update import paths for complex type defs _(by Athan Reines)_
 
 </details>
 
@@ -227,6 +253,135 @@ A total of 3 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2023-09-24)
+
+<section class="features">
+
+### Features
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - **feat:** update minimum TypeScript version _(by Philipp Burckhardt)_
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - **fix:** update import paths for complex type defs _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.6">
+
+## 0.0.6 (2022-02-16)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.5">
+
+## 0.0.5 (2021-08-22)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.4">
+
+## 0.0.4 (2021-07-07)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.3">
+
+## 0.0.3 (2021-06-27)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.2">
+
+## 0.0.2 (2021-06-16)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.1">
+
+## 0.0.1 (2021-06-15)
+
+No changes reported for this release.
 
 </section>
 
