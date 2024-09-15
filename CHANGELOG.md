@@ -2,6 +2,50 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-09-15)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`91ad072`](https://github.com/stdlib-js/stdlib/commit/91ad07207eee217885975ce19d83e85d1f4a6499) - add missing property
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`91ad072`](https://github.com/stdlib-js/stdlib/commit/91ad07207eee217885975ce19d83e85d1f4a6499) - **fix:** add missing property _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-07-29)
