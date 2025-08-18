@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-24)
+## Unreleased (2025-08-18)
 
 <section class="bug-fixes">
 
@@ -23,6 +23,9 @@
 
 <details>
 
+-   [`8cea287`](https://github.com/stdlib-js/stdlib/commit/8cea2870cc30848a616b76259b3274caae387b10) - **docs:** fix return annotation values _(by Philipp Burckhardt)_
+-   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`36a9fcd`](https://github.com/stdlib-js/stdlib/commit/36a9fcd9554f21f2aca3f7bca54616cfb205deea) - **fix:** resolve TypeScript lint error _(by Athan Reines)_
 -   [`8f72b43`](https://github.com/stdlib-js/stdlib/commit/8f72b432c0fc81a78641d5689722ecc9671c6f02) - **style:** add missing spaces around parentheses _(by Philipp Burckhardt)_
 -   [`988ba2c`](https://github.com/stdlib-js/stdlib/commit/988ba2c59bc5112d3c4e468245a69ce4ebe92109) - **docs:** fix example _(by Athan Reines)_
