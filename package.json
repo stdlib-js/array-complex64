@@ -3,8 +3,31 @@
   "version": "0.3.1",
   "description": "Complex64Array.",
   "license": "Apache-2.0",
-  "type": "module",
-  "main": "./index.mjs",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -13,6 +36,78 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "dependencies": {
+    "@stdlib/array-base-accessor-getter": "^0.2.2",
+    "@stdlib/array-base-assert-is-complex128array": "^0.2.2",
+    "@stdlib/array-base-assert-is-complex64array": "^0.2.2",
+    "@stdlib/array-base-getter": "^0.2.2",
+    "@stdlib/array-float32": "^0.2.2",
+    "@stdlib/assert-has-iterator-symbol-support": "^0.2.2",
+    "@stdlib/assert-is-array": "^0.2.2",
+    "@stdlib/assert-is-array-like-object": "^0.2.2",
+    "@stdlib/assert-is-arraybuffer": "^0.2.2",
+    "@stdlib/assert-is-collection": "^0.2.2",
+    "@stdlib/assert-is-complex-like": "^0.2.3",
+    "@stdlib/assert-is-function": "^0.2.2",
+    "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
+    "@stdlib/assert-is-object": "^0.2.2",
+    "@stdlib/assert-is-string": "^0.2.2",
+    "@stdlib/assert-is-string-array": "^0.2.2",
+    "@stdlib/complex-float32-ctor": "^0.1.0",
+    "@stdlib/complex-float32-imag": "^0.1.1",
+    "@stdlib/complex-float32-real": "^0.1.1",
+    "@stdlib/math-base-assert-is-even": "^0.2.4",
+    "@stdlib/math-base-assert-is-integer": "^0.2.6",
+    "@stdlib/math-base-special-floor": "^0.2.3",
+    "@stdlib/strided-base-reinterpret-complex128": "^0.2.2",
+    "@stdlib/strided-base-reinterpret-complex64": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
+    "@stdlib/symbol-iterator": "^0.2.2",
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.4",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+  },
+  "devDependencies": {
+    "@stdlib/array-buffer": "^0.2.2",
+    "@stdlib/array-complex128": "^0.3.1",
+    "@stdlib/assert-has-own-property": "^0.2.2",
+    "@stdlib/assert-instance-of": "^0.3.0",
+    "@stdlib/assert-is-boolean": "^0.2.2",
+    "@stdlib/assert-is-complex64": "^0.2.2",
+    "@stdlib/assert-is-complex64array": "^0.2.2",
+    "@stdlib/assert-is-integer": "^0.2.2",
+    "@stdlib/assert-is-iterator-like": "^0.2.2",
+    "@stdlib/assert-is-negative-zero": "^0.2.2",
+    "@stdlib/assert-is-positive-zero": "^0.2.2",
+    "@stdlib/complex-float32-base-add": "^0.2.0",
+    "@stdlib/complex-float64-imag": "^0.1.1",
+    "@stdlib/complex-float64-real": "^0.1.1",
+    "@stdlib/console-log-each": "^0.2.3",
+    "@stdlib/math-base-special-pow": "^0.3.0",
+    "@stdlib/random-base-randu": "^0.2.2",
+    "@stdlib/utils-identity-function": "^0.2.3",
+    "proxyquire": "^2.0.0",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "stdtypes",
