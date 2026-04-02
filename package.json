@@ -61,7 +61,7 @@
     "@stdlib/math-base-special-floor": "^0.2.4",
     "@stdlib/strided-base-reinterpret-complex128": "^0.2.3",
     "@stdlib/strided-base-reinterpret-complex64": "^0.2.2",
-    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
     "@stdlib/symbol-iterator": "^0.2.3",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.4",
