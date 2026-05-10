@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-09)
+## Unreleased (2026-05-10)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`97a16c0`](https://github.com/stdlib-js/stdlib/commit/97a16c0cb60755f05223176714532bb47d2c914d) - **docs:** improve doctests for complex number typed arrays in `array/complex64` [(#12072)](https://github.com/stdlib-js/stdlib/pull/12072) _(by Karan Anand)_
 -   [`a67c356`](https://github.com/stdlib-js/stdlib/commit/a67c35688a0009092f281d79378c4c53cb226bd5) - **docs:** improve doctests for complex number instances in `array/complex64` [(#11972)](https://github.com/stdlib-js/stdlib/pull/11972) _(by Karan Anand)_
 -   [`9efe7df`](https://github.com/stdlib-js/stdlib/commit/9efe7df13c315e32a9e938830a15f874fb1cb4a0) - **bench:** refactor to use string interpolation in `array/complex64` [(#10302)](https://github.com/stdlib-js/stdlib/pull/10302) _(by Shubham)_
 
