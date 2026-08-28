@@ -2086,6 +2086,7 @@ logEach( '%s', out );
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/array-float32`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">Float32Array.</span>
 -   <span class="package-name">[`@stdlib/array-complex128`][@stdlib/array/complex128]</span><span class="delimiter">: </span><span class="description">Complex128Array.</span>
 -   <span class="package-name">[`@stdlib/complex-cmplx`][@stdlib/complex/cmplx]</span><span class="delimiter">: </span><span class="description">create a complex number.</span>
 -   <span class="package-name">[`@stdlib/complex-float32/ctor`][@stdlib/complex/float32/ctor]</span><span class="delimiter">: </span><span class="description">64-bit complex number.</span>
@@ -2175,6 +2176,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor
 
 <!-- <related-links> -->
+
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
 [@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
