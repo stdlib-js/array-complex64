@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-03)
+## Unreleased (2026-11-05)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`7349dff`](https://github.com/stdlib-js/stdlib/commit/7349dffeddd90289879f06e70acc1be8544af75b) - **style:** add missing whitespace [(#16507)](https://github.com/stdlib-js/stdlib/pull/16507) _(by Philipp Burckhardt)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`a1d379b`](https://github.com/stdlib-js/stdlib/commit/a1d379b12e1bf2bc546f670ab522cacf92fc1682) - **docs:** update related packages sections [(#14735)](https://github.com/stdlib-js/stdlib/pull/14735) _(by stdlib-bot)_
 -   [`3fdf0b9`](https://github.com/stdlib-js/stdlib/commit/3fdf0b943c342271e5ee4b80d7bf30cb2b5de1e1) - **bench:** reassign variable _(by Athan Reines)_
